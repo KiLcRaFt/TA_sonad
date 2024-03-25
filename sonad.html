@@ -7,21 +7,26 @@
 </head>
 <body>
     <h1 style="text-align: center">Tarkvara sõnad</h1>
+    <!-- Loomine tabel -->
     <table style="background-color: antiquewhite;border: black 10px;border-spacing: 20px; margin-left: 300px; margin-right: 300px">
-            <td title="Eesti-Vene" style="border: black 5px">
-                <input type="button" value="Random" onclick="randomSonad()">
-                <div id="random-sona"></div>
-                <label for="kontroll">Kirjuta sõna venekeeles</label>
-                <input type="text" id="kontroll" onchange="kontrollima()">
-                <div id="vastus"></div>
-            </td>
-            <td title="Vene-Eesti" style="border: black 5px">
-                <input type="button" value="Random" onclick="randomSonadvene()">
-                <div id="random-sonavene"></div>
-                <label for="kontrollvene">Kirjuta sõna venekeeles</label>
-                <input type="text" id="kontrollvene" onchange="kontrollimavene()">
-                <div id="vastusvene"></div>
-            </td>
+        <!-- 1. veerung kus on Eesti-Vene sõnastik -->
+        <td title="Eesti-Vene" style="border: black 5px">
+            <h2>Eesti-vene</h2>
+            <input type="button" value="Random" onclick="randomSonad()">
+            <div id="random-sona"></div>
+            <label for="kontroll">Kirjuta sõna vene keeles</label>
+            <input type="text" id="kontroll" onchange="kontrollima()">
+            <div id="vastus"></div>
+        </td>
+        <!-- 2. veerung kus on Vene-Eesti sõnastik -->
+        <td title="Vene-Eesti" style="border: black 5px">
+            <h2>Vene-Eesti</h2>
+            <input type="button" value="Random" onclick="randomSonadvene()">
+            <div id="random-sonavene"></div>
+            <label for="kontrollvene">Kirjuta sõna eesti keeles</label>
+            <input type="text" id="kontrollvene" onchange="kontrollimavene()">
+            <div id="vastusvene"></div>
+        </td>
     </table>
 </body>
 </html>
