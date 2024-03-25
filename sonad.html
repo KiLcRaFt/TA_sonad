@@ -7,10 +7,17 @@
 </head>
 <body>
     <h1>Tarkvara sõnad</h1>
-    <input type="button" value="Random" onclick="randomSonad()">
-    <div id="random-sona"></div>
-    <label for="kontroll">Kirjuta sõna venekeeles</label>
-    <input type="text" id="kontroll" onchange="kontrollima()">
-    <div id="vastus"></div>
+    <table style="border: black 5px">
+            <td title="Eesti-Vene">
+                <div>
+                <input type="button" value="Random" onclick="randomSonad()">
+                <div id="random-sona"></div>
+                <label for="kontroll">Kirjuta sõna venekeeles</label>
+                <input type="text" id="kontroll" onchange="kontrollima()">
+                <div id="vastus"></div>
+                </div>
+            </td>
+            <td><div></div></td>
+    </table>
 </body>
 </html>
