@@ -31,6 +31,8 @@ const sonad=[
     'arendamine',
     'valideerimine'
 ];
+
+
 // masiiv vene sõnadega
 const venesonad=[
     'реализация',
