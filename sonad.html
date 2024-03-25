@@ -17,7 +17,15 @@
                 <div id="vastus"></div>
                 </div>
             </td>
-            <td><div></div></td>
+            <td>
+                <div>
+                    <input type="button" value="Random" onclick="randomSonadvene()">
+                    <div id="random-sonavene"></div>
+                    <label for="kontrollvene">Kirjuta sõna venekeeles</label>
+                    <input type="text" id="kontrollvene" onchange="kontrollimavene()">
+                    <div id="vastusvene"></div>
+                </div>
+            </td>
     </table>
 </body>
 </html>
