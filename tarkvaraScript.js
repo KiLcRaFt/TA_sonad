@@ -31,7 +31,6 @@ const sonad=[
     'arendamine',
     'valideerimine'
 ];
-
 // Massiv vene keele sõnadeks
 const venesonad=[
     'реализация',
@@ -92,5 +91,36 @@ function kontrollima() {
         document.getElementById("vastus").innerHTML = "Õige vastus!";
     } else {
         document.getElementById("vastus").innerHTML = "Vale vastus(((";
+    }
+}
+
+
+function randomSonadvene(){
+
+    //random sõnad - arv
+    const juhuslikSona = Math.floor(Math.random()*venesonad.length);
+
+    //võtme random sõna massivist
+    const sona = venesonad[juhuslikSona];
+
+    //lisame HTML lehele
+
+    document.getElementById("random-sonavene").innerHTML=sona;
+}
+
+function kontrollimavene() {
+    // võtme HTML lehele elementid
+    const sona = document.getElementById("random-sonavene").innerText;
+    const eestisona = document.getElementById("kontrollvene").value;
+
+    // saime indeksid nendest elemendi
+    const indVene = venesonad.indexOf(sona);
+    const indEesti = sonad.indexOf(eestisona);
+
+    // Valideerimine
+    if (indVene === indEesti && indVene !== -1 && indEesti !== -1) {
+        document.getElementById("vastusvene").innerHTML = "Õige vastus!";
+    } else {
+        document.getElementById("vastusvene").innerHTML = "Vale vastus(((";
     }
 }
