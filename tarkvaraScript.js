@@ -1,4 +1,4 @@
-// Massiv eesti keele sõnadeks
+// masiiv eesti sõnadega
 const sonad=[
     'teostus',
     'algorütm',
@@ -31,7 +31,7 @@ const sonad=[
     'arendamine',
     'valideerimine'
 ];
-// Massiv vene keele sõnadeks
+// masiiv vene sõnadega
 const venesonad=[
     'реализация',
     'алгоритм',
@@ -78,15 +78,15 @@ function randomSonad(){
 }
 
 function kontrollima() {
-    // Võtme elemendid html´i lehele
+    // võtme HTML lehele elementid
     const sona = document.getElementById("random-sona").innerText;
     const venesona = document.getElementById("kontroll").value;
 
-    // Vaatame indeksi masiivist
+    // saime indeksid nendest elemendi
     const indEesti = sonad.indexOf(sona);
     const indVene = venesonad.indexOf(venesona);
 
-    // Valideerime kas vastus on õige või vale
+    // Valideerimine
     if (indEesti === indVene && indEesti !== -1 && indVene !== -1) {
         document.getElementById("vastus").innerHTML = "Õige vastus!";
     } else {
