@@ -6,25 +6,21 @@
     <script src="tarkvaraScript.js"></script>
 </head>
 <body>
-    <h1>Tarkvara sõnad</h1>
-    <table style="border: black 5px">
-            <td title="Eesti-Vene">
-                <div>
+    <h1 style="text-align: center">Tarkvara sõnad</h1>
+    <table style="background-color: antiquewhite;border: black 10px;border-spacing: 20px; margin-left: 300px; margin-right: 300px">
+            <td title="Eesti-Vene" style="border: black 5px">
                 <input type="button" value="Random" onclick="randomSonad()">
                 <div id="random-sona"></div>
                 <label for="kontroll">Kirjuta sõna venekeeles</label>
                 <input type="text" id="kontroll" onchange="kontrollima()">
                 <div id="vastus"></div>
-                </div>
             </td>
-            <td>
-                <div>
-                    <input type="button" value="Random" onclick="randomSonadvene()">
-                    <div id="random-sonavene"></div>
-                    <label for="kontrollvene">Kirjuta sõna venekeeles</label>
-                    <input type="text" id="kontrollvene" onchange="kontrollimavene()">
-                    <div id="vastusvene"></div>
-                </div>
+            <td title="Vene-Eesti" style="border: black 5px">
+                <input type="button" value="Random" onclick="randomSonadvene()">
+                <div id="random-sonavene"></div>
+                <label for="kontrollvene">Kirjuta sõna venekeeles</label>
+                <input type="text" id="kontrollvene" onchange="kontrollimavene()">
+                <div id="vastusvene"></div>
             </td>
     </table>
 </body>
